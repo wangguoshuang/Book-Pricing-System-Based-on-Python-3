@@ -22,7 +22,7 @@ def spider(sn, book_list=[]):
         link = li.xpath('a/@href')
         # print(link[0])
         # 价格
-        price = li.xpath('p[@class="price"]/span[@class="search_now_price"]/text()')
+        price = li.xpath('//span[@class="search_now_price"]/text()')
         # print(price[0].replace('¥', ''))
 
         # 商家
